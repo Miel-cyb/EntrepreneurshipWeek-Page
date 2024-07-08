@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+     font-family: "Montserrat", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+  background: radial-gradient(rgb(239, 238, 238),rgb(200, 199, 199));
+  height: 100vh;
+}
+main{
+    background: radial-gradient(#D6E5EB, #31809A );
+    min-height: 100vh;
+    
+}
+header{
+  
+    width: 100%;
+    z-index: 1000;
+    position: relative;
+}
+.nav-center{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo{
+    font-weight: bolder;
+     text-shadow: 2px 2px 4px rgba(10, 30, 50, 0.5);
+    color: #fed68c;
+    width: 300px;
+
+}
+.nav-links{
+    background-color: white;
+	overflow: hidden;
+	transition: 0.5s height;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+	height: 0;
+    }
+     .links{
+         line-height: 40px;
+         padding-left: 0;
+          }
+       
+   .links li a{
+        cursor: pointer;
+        display: block;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        color: #1a495b ;
+    }
+    .nav-links li a:hover{
+        color: #021e29 ;
+        background-color: #fed68c;
+        font-size: 17px;
+    }
+.menu-icon{
+    background: transparent;
+    font-size: 25px;
+    border: none;
+    color: #D6E5EB;
+    font-weight: bold;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.menu-icon:hover{
+    font-size: 26px; 
+    color: #96c8dc;
+}
+.overview{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image{
+    background: url(./pngtree-the-concept-of-start-up-and-entrepreneurship-photo-image_2006633.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+    
+}
+@media screen and (max-width:320px){
+    .links li a{
+        font-size: 0.7rem;
+    }
+     .links li a:hover{
+        font-size: 0.9rem;
+    }
+    .logo{
+        font-size: 13px;
+        width: 200px;
+    }
+    .image{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/60% 30% 70% 40%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70/60% 30% 70% 40%;
+    }
+}
+
+.content{
+    margin: 30px 5px;
+    padding: 10px;
+    line-height: 30px;
+}
+.content-head{
+    color: #1a495b;
+    text-shadow : 2px 6px 7px rgba(10, 30, 50, 0.5);
+}
+
+.content button{
+    margin-top: 15px;
+    padding: 13px;
+    border-radius: 10px;
+    border: transparent;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+.content button:hover{
+    border: 3px inset rgba(0, 0, 0, 0.2);
+    
+}
+.content button a:hover{
+    color: black;
+}
+@media screen and (min-width: 990px) {
+    .menu-icon{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        box-shadow: 10px 5px 10px rgba(10, 30, 50, 0.5);
+        
+        
+    }
+    .logo{
+        margin-left: 40px;
+    }
+    .nav-links{
+        height: auto;
+        background: transparent;
+        margin-right: 60px;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    .links li a{
+       font-weight: bold;
+       padding: 0;
+       color: #fed68c;
+    }
+     .links li a:hover{
+        background-color: transparent;
+       border-bottom: 2px solid #D6E5EB;
+       font-size: auto;  
+     }
+
+     .overview{
+       flex-direction: row;
+       justify-content:initial;
+       gap: 100px;
+
+    }
+    .image{
+        margin-left: 70px;
+        width: 400px;
+        height: 400px;
+     }
+     .content{
+       margin: 0 10px 0 10px;
+     }
+
+     .content-head{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+     }
+     .content-text{
+        width: 700px;
+        font-size: 15px;
+        margin-top: 20px;
+     }
+     .content button{
+        padding: 17px;
+     }
+
+}
+
+.activities{
+    margin-top: 80px;
+   
+    
+}
+.days{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.activities h2{
+    color: #1a495b;
+    margin-left: 20px;
+
+}
+.day{
+    margin: 20px;
+    padding: 20px;
+    line-height: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fed68c;
+}
+footer{
+    background-color: #1a495b;
+     color: #D6E5EB;
+    margin-top: 100px;
+}
+
+footer div{
+    margin: 20px;
+    padding: 20px;
+    line-height: 30px;
+}
+
+footer img{
+    width: 100px;
+    height: 50px;
+}
+
+@media screen and (min-width:990px) {
+    .activities .days{
+        display:flex;
+        flex-direction: row;  
+    }
+    footer{
+        height: 40vh;
+        display: flex;
+    }
+}
+
