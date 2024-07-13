@@ -5,11 +5,13 @@ It includes activities planned and a registration button for attendees. Will be 
 Consisting of HTML, CSS and Javascript.
 
 Features
+
 Introduction to the Entrepreneurial Week Celebration
 Overview of activities and events
 Registration button to sign up for the event
 
 Hosted Link
+
 https://businessweek.netlify.app/
 
 
